@@ -14,7 +14,7 @@
 }
 
 #logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
+  background: url('../Images/restaurant-logo_large.png') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -116,7 +116,7 @@
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
-    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    background: url('../Images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
   }
 }
@@ -135,7 +135,7 @@
   }
   /* Home Page */
  .container .jumbotron {
-   background: url('../images/jumbotron_992.jpg') no-repeat;
+   background: url('../Images/jumbotron_992.jpg') no-repeat;
    height: 558px;
  }
  /* End Home Page */
@@ -145,10 +145,12 @@
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
  .container .jumbotron {
-   background: url('../images/jumbotron_768.jpg') no-repeat;
+   background: url('../Images/jumbotron_768.jpg') no-repeat;
    height: 432px;
  }
  /* End Home Page */
+
+
   /* form style */
   input[type=text] {
    width: 100%;
@@ -166,6 +168,8 @@
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+
+
 
   /* form style */
   input[type=text] {
@@ -258,6 +262,7 @@
     font-size: 6vw;
   }
   /* End Header */
+
   /* Home page */
    #menu-tile, #specials-tile {
      width: 280px;
@@ -488,6 +493,18 @@ input[type=text] {
  resize: vertical;
  color:black;
 }
+input[type=email] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin: 6px 50px 16px 6px;
+    resize: vertical;
+    color: black;
+}
 
 input[type=submit] {
  background-color: #4CAF50;
@@ -522,11 +539,11 @@ input[type=submit]:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-tile {
-  background: url('../images/food6.jpeg') no-repeat;
+  background: url('../Images/food6.jpeg') no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url('../images/specialfood6.jpeg') no-repeat;
+  background: url('../Images/specialfood6.jpeg') no-repeat;
   background-position: center;
 }
 #menu-tile span, #specials-tile span, #map-tile span {
@@ -541,3 +558,84 @@ input[type=submit]:hover {
   color: #fff;
   opacity: .8;
 }
+/* -----------------------------------------Moving bike-------------------------------------- */
+.bg{
+
+  background: url('../Images/background.png');
+  /*background-repeat: no-repeat;*/
+  top: 0;
+  width: 95%;
+  height: 400px;
+  position: relative;
+  animation: as1 1s linear infinite;
+
+}
+
+.bike{
+  position: absolute;
+  left: 150px;
+  bottom: 55px;
+  width: 150px;
+}
+@keyframes as1{
+  from{background-position: bottom right;}
+  to{background-position: bottom left;}
+}
+/* -------------------------------------------------------Booking Table CSS--------------------------- */
+.terms{
+  background-color:black;
+  opacity:0.7;
+}
+.table-row {
+border-bottom: 1px solid black;
+padding-bottom: 1em;
+margin-bottom: 1em;
+margin-top:1em;
+text-align:center;
+}
+
+.section-header {
+font-family: "Metal Mania";
+font-weight: normal;
+color:#f6b319 ;
+text-align: center;
+font-size: 2.5em;
+}
+
+
+.table-row:last-child {
+border: none;
+}
+
+
+.table-item {
+display: inline-block;
+padding-right: .5em;
+}
+
+.table-date {
+color: white;
+width: 11%;
+font-weight: bold;
+}
+
+.table-floor {
+width: 24%;
+}
+
+.table-arena {
+width: 42%;
+}
+
+.table-btn {
+max-width: 19%;
+color: #f6b319;
+}
+
+.shop-item {
+margin: 30px;
+}
+.details{
+text-align:center;
+}
+
